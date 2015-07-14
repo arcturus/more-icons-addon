@@ -15,7 +15,7 @@ In some cases the system already provide the best icon, this addon will scan the
 
 ### Thanks
 * [icon] - Icon from PICOL
-* [Ace Editor] - FirefoxOS addons
+* [addons] - FirefoxOS addons
 
 License
 ----
@@ -27,8 +27,3 @@ MPL
 
 [icon]:http://www.picol.org/
 [addons]:https://developer.mozilla.org/en-US/Firefox_OS/Add-ons
-[1]:http://daringfireball.net/projects/markdown/
-[marked]:https://github.com/chjj/marked
-[Ace Editor]:http://ace.ajax.org
-[node.js]:http://nodejs.org
-[Twitter Bootstrap]:http://twitter.github
