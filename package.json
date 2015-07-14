@@ -1,0 +1,10 @@
+{
+  "name": "more-icons-addon",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-jshint": "latest"
+  },
+  "dependencies": {
+  }
+}

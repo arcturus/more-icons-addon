@@ -1,0 +1,23 @@
+{
+  "name": "more-icons-addon",
+  "description": "Get more icon choices when adding a webpage to your homescreen. When having the bookmarks screen appears tap on the icon to change through the available options",
+  "customizations": [
+    {
+      "filter": "app://bookmark.gaiamobile.org/save.html",
+      "scripts": [
+        "addon.js"
+      ],
+      "stylesheets": [
+        "style.css"
+      ]
+    }
+  ],
+  "role": "addon",
+  "type": "certified",
+  "icons": {
+    "128": "/icon.png"
+  },
+  "installs_allowed_from": [
+    "*"
+  ]
+}
