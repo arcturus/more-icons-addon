@@ -19,5 +19,6 @@
   },
   "installs_allowed_from": [
     "*"
-  ]
+  ],
+  "package_path": "dist/package.zip"
 }
