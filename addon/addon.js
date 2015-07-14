@@ -1,10 +1,5 @@
-if (document.documentElement) {
-  moreIcons();
-} else {
-  window.addEventListener("DOMContentLoaded", moreIcons);
-}
-
 function moreIcons() {
+  'use strict';
   setTimeout(function() {
     var bookmarkIcon = document.getElementById('bookmark-icon');
     var bookmarkURL = document.getElementById('bookmark-url').textContent;
@@ -42,7 +37,7 @@ function moreIcons() {
 
         // Mutation observer to add the new data if we changed the icon
         var target = document.querySelector('[role="status"]');
-        var observer = new MutationObserver(function(mutations) {
+        var observer = new MutationObserver(function() {
           // Save during the status display
           if (target.classList.contains('onviewport')) {
             observer.disconnect();
@@ -58,15 +53,15 @@ function moreIcons() {
                 }
                 bookmark.icon = candidates[currentAlternative - 1];
                 store.put(bookmark, bookmarkURL);
-              })
-            })
+              });
+            });
           }
         });
         var config = { attributes: true };
         observer.observe(target, config);
       }
 
-    }
+    };
     xhr.send();
 
   }, 1000);
@@ -97,4 +92,10 @@ function moreIcons() {
       return null;
     }
   }
+}
+
+if (document.documentElement) {
+  moreIcons();
+} else {
+  window.addEventListener('DOMContentLoaded', moreIcons);
 }
